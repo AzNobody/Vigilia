@@ -6,41 +6,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vigilia</title>
-  <!-- Bootstrap -->
   <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="container">
     <div class="row">
-      <div class="col-sm-4 d-flex justify-content-center">
+      <div class="col-sm-5 d-flex justify-content-start">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-            data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Accueil</a>
+                <h5 id="top"><a class="nav-link size" href="index.html">Accueil</a></h5>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Nos Montres</a>
+                <h5 id="top"><a class="nav-link" href="#produits">Nos Montres</a></h5>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Drop en cours</a>
+                <h5 id="top"><a class="nav-link" href="#drop">Drop en cours</a></h5>
               </li>
             </ul>
           </div>
         </nav>
       </div>
-      <div class="col-sm-4 d-flex justify-content-center">
-          <img src="images/logo.png" height="125" width="125" alt="Vigilia" />
+      <div class="col-sm-2 d-flex justify-content-center">
+        <img src="images/logo.png" height="125" width="125" alt="Vigilia" />
       </div>
-      <div class="col-sm-4 d-flex text-right justify-content-center">
-        
+      <div class="col-sm-5 d-flex">
+        <ul class="nav col-md-4 list-unstyled" id="icons-list">
+          <li class="ms-2" id="icons"><a class="text-muted" href="store.html"><i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i></a></li>
+          <li class="ms-2" id="icons"><a class="text-muted" href="profil.html"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a></li>
+        </ul>
       </div>
     </div>
   </header>
@@ -78,7 +80,7 @@
     </div>
     <hr>
   </div>
-  <h2 class="text-center">RECOMMENDED PRODUCTS</h2>
+  <h2 class="text-center" id="produits">Nos montres</h2>
   <hr>
   <div class="container">
     <div class="row text-center">
@@ -153,7 +155,7 @@
     </div>
   </div>
   <hr>
-  <h2 class="text-center">FEATURED PRODUCTS</h2>
+  <h2 class="text-center" id="drop">Drop en cours</h2>
   <hr>
   <div class="container">
     <div class="row">
